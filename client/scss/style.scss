@@ -1,0 +1,98 @@
+@import url(../resetCss/reset.css);
+.wrap {
+  min-height: 100vh;
+  //헤더
+  header {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+      width: 485px;
+      height: 64px;
+    }
+
+    //nav
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100% !important;
+
+      .btn-wrap {
+        background: white;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 4px double #000;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button {
+          margin: 10px 0;
+          border: none;
+          background: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  // 헤더 끝
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    section {
+      display: flex;
+      align-items: center;
+      width: 1200px;
+      border-bottom: 4px solid #000;
+      padding: 10px 0;
+      img {
+        width: 400px;
+        height: 300px;
+      }
+
+      .description-wrap {
+        margin: 10px;
+        h2 {
+          font-weight: 900;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18x;
+          font-weight: 200;
+          margin-bottom: 20px;
+        }
+        .date {
+          margin-top: 3.6em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+    svg {
+      margin: 10px;
+    }
+    #main-wrap {
+      section {
+        flex-direction: column;
+        width: 100% !important;
+        .img-wrap {
+          width: 100% !important;
+          img {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
