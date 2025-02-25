@@ -6,7 +6,7 @@ const textValue = document.querySelector("#text-value");
 // 2. Enter 이벤트추가하기
 // 3. 해당 키워드 입력한 값 그리기
 
-let url = new URL("http://localhost:8080/news");
+let url;
 
 const fetchData = async (url) => {
   try {
@@ -93,6 +93,14 @@ const rendor = () => {
   document.querySelector("#main-wrap").innerHTML = newsHTML;
 };
 
+const pageNationRendor = () => {
+  // pageSize
+  // totalPageResults
+  // page
+  // firts, last page
+  // groupSize
+  // pageGroup
+};
 const errorRendor = (errorMessage) => {
   const errorHTML = `  <div class="error-wrap">
           <p>${errorMessage}</p>
